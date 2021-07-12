@@ -1,0 +1,12 @@
+FROM mongo:latest
+
+WORKDIR /data/db
+
+RUN echo "PWD is: $PWD"
+
+RUN echo $(ls -1 ./)
+
+#CMD [ "python", "/data/db/mongo.py" ]
+
+
+
