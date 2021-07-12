@@ -1,0 +1,21 @@
+FROM python:3.8-slim-buster
+
+#RUN mkdir -p /app/server/backend
+
+WORKDIR /app/server/python-app
+
+RUN pip3 install pymongo
+
+RUN pip3 install requests
+
+#COPY . .
+
+#ADD backend.py ./
+
+RUN echo "PWD is: $PWD"
+
+RUN echo $(ls -1 ./)
+
+EXPOSE 8020
+
+CMD [ "python", "/app/server/python-app/db.py" ]
