@@ -16,6 +16,6 @@ RUN echo "PWD is: $PWD"
 
 RUN echo $(ls -1 ./)
 
-EXPOSE 8000
+EXPOSE 8020
 
 CMD [ "python", "/app/server/python-app/db.py" ]

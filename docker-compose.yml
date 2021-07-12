@@ -24,7 +24,7 @@ services:
         depends_on:
             - mongodb
         ports:
-            - '8000:8000'
+            - '8021:8020'
 
         networks:
             - app-network
