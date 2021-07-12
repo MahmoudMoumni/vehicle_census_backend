@@ -18,4 +18,4 @@ RUN echo $(ls -1 ./)
 
 EXPOSE 8020
 
-CMD [ "python", "/app/server/python-app/db.py" ]
+CMD [ "python", "/app/server/python-app/backend.py" ]
