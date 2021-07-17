@@ -1,0 +1,10 @@
+type,speed,voie,routeId,image_path
+car,0.0,droite,1,./cropped_vehicle_images/1.jpg
+car,0.0,droite,1,./cropped_vehicle_images/2.jpg
+car,0.0,droite,1,./cropped_vehicle_images/3.jpg
+car,0.0,droite,1,./cropped_vehicle_images/1.jpg
+car,0.0,droite,1,./cropped_vehicle_images/2.jpg
+car,0.0,droite,1,./cropped_vehicle_images/3.jpg
+car,0.0,droite,1,./cropped_vehicle_images/1.jpg
+car,0.0,droite,1,./cropped_vehicle_images/2.jpg
+car,0.0,droite,1,./cropped_vehicle_images/3.jpg

@@ -23,25 +23,24 @@ def read_text_file(file_path):
     csv_data=[]
     with open(file_path, 'r') as f:
         reader = csv.reader(f)
+        headers = next(reader, None)
+        if headers is None:
+            return 
+        print(headers)
+        lg_headers=len(headers)
         for row in reader:
-            cur_data={
-                'x1':row[0],
-                'x2':row[1],
-                'x3':row[2],
-                'x4':row[3],
-                'x5':row[4],
-                'x6':row[5],
-                'x7':row[6],
-                'x8':row[7],
-                'x9':row[8],
-                'x10':row[9]
-            }
+            cur_data={}
+            for i in range(lg_headers):
+                cur_data[headers[i]]=row[i]
+            print(cur_data)
             csv_data.append(cur_data)
-            break
+            
     
     print("INSERTING DATA")
     #print(csv_data)
     if len(csv_data):
+        
+        return 
         mongoConnection.insertData(dbname,dbcollection,csv_data)
   
   
